@@ -12,6 +12,7 @@ use Spatie\QueryBuilder\QueryBuilder;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
 
+
 class PostRepository implements PostRepositoryInterface
 {
     private const SUCCESS_DATA_DELETED   = "Data Was Successfully Deleted";

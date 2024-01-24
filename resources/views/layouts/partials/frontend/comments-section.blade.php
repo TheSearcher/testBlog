@@ -27,7 +27,6 @@
                     <input type="submit" class="px-2.5 py-1.5 rounded-md text-white text-sm bg-indigo-500 text-lg" value='Post Comment'>
                 </div>
                 {!! Form::close() !!}
-
             @endif
         @endauth
         @if ($data->comments->count())

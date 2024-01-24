@@ -25,8 +25,6 @@
     <div class="container-fluid">
         <div class="row"><div class="col-md-3">
                 @if($id)
-                 {{--   <a href="{{ route('dashboard.user.post.index')}}"
-                       class="btn btn-primary btn-block mb-3">Delete Your Post</a>--}}
                     {!! Form::open(['method' => 'DELETE', 'route' => ['dashboard.user.post.destroy', $id],
                                     'onsubmit' => 'return confirm("Are you sure?")', 'id'=>'himan']) !!}
                     <button class="btn btn-primary btn-block mb-3">Delete Your Post</button>
@@ -110,9 +108,6 @@
                     @else
                         {!! Form::open(['route' => ['dashboard.user.post.store'], 'method' => 'POST', 'class' => 'form', 'files' => false]) !!}
                     @endif
-
-                    {{--{!! Form::open(['route' => 'dashboard.user.post.store', 'method' => 'POST', 'enctype' => 'multipart/form-data',
-                    'class' => 'form', 'id' => 'editfrom']) !!}--}}
                         {!! Form::token() !!}
                         <div class="card-body">
                         <div class="form-group">

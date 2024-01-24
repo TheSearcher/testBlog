@@ -27,25 +27,7 @@ interface PostRepositoryInterface
      */
     public function getCommentsData($request, $user_id, $users);
 
-    /**
-     * @param $data
-     * @param $method
-     * @param $id
-     * @return mixed
-     */
-    public function updateData($data, $method, $id);
 
-    /**
-     * @param $data
-     * @param $method
-     * @return mixed
-     */
-    public function saveData($data, $method);
-
-    /**
-     * @return mixed
-     */
-    public function bulkPostEmailUpdate();
 }
 
 
